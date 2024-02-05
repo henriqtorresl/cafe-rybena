@@ -1,0 +1,54 @@
+.container-header {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        margin-left: 15px;
+        width: 5%;
+        height: 5%;
+    }
+}
+
+.itens {
+    padding: 15px;
+
+    a {
+        margin: 0 20px 0 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+
+        &:hover {
+            background-color: #AE8956;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
+
+.itens-home {
+    padding: 15px;
+    background-color: #7C573C;
+    height: 900px;
+
+    a {
+        margin: 0 20px 0 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+
+        &:hover {
+            background-color: #AE8956;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
+
+.activate {
+    background-color: #AE8956;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
