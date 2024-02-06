@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,15 +10,17 @@ export class HeaderComponent implements OnInit {
 
   @Input() classeItens!: string;
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    
   }
 
-  // arrumar essa lógica
   ativarBotao(rota: any): string {
-    if (rota == 'home') {
+    const rotaAtual = this.router.url;
+
+    if (rotaAtual.includes(rota)) {
       return 'activate';
     } else {
       return '';
