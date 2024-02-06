@@ -1,10 +1,10 @@
 <div class="container-header">
     <img src="../../../assets/img/logo.png" alt="Logo">
     <div [ngClass]="classeItens">
-        <a routerLink="/home">Home</a>
-        <a routerLink="#">Menu</a>
-        <a routerLink="#">Services</a>
-        <a routerLink="#">About Us</a>
-        <a routerLink="#">Contact</a>
+        <a routerLink="/home" [ngClass]="ativarBotao('home')">Home</a>
+        <a routerLink="#" [ngClass]="ativarBotao('menu')">Menu</a>
+        <a routerLink="#" [ngClass]="ativarBotao('services')">Services</a>
+        <a routerLink="#" [ngClass]="ativarBotao('about')">About Us</a>
+        <a routerLink="#" [ngClass]="ativarBotao('contact')">Contact</a>
     </div>
 </div>    
