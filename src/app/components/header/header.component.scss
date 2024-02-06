@@ -5,6 +5,12 @@
 
 .left {
     width: 60%;
+
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 .rigth {

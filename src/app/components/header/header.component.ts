@@ -26,4 +26,8 @@ export class HeaderComponent implements OnInit {
       return '';
     }
   }
+
+  irParaHome(): void {
+    this.router.navigateByUrl('home');
+  }
 }
