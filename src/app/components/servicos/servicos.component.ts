@@ -31,17 +31,13 @@ export class ServicosComponent implements OnInit {
   }
 
   reservar(): void {
-    console.log(this.formulario.value);
-
     if (
       this.formulario.value.data &&
       this.formulario.value.qntPessoas &&
       this.formulario.value.nome &&
       this.formulario.value.email &&
       this.formulario.value.telefone
-    ) {
-      console.log('data preenchida')
-      
+    ) {      
       this.snackBar.open('Mesa Reservada com sucesso!', 'OK', {
         duration: 3000
       });
