@@ -1,3 +1,49 @@
 <app-header [classeItens]="'itens'"></app-header>
 
-<p>recomendados works!</p>
+<div class="cards">
+
+    <button (click)="proximo()">
+        <mat-icon>
+            arrow_back
+        </mat-icon>
+    </button>
+
+    <div class="itens">
+        <section class="item">
+            <div>
+                <mat-icon>info</mat-icon>
+            </div>
+            <img src="../../../assets/img/saco-cafe-marrom.png" alt="Produto 1">
+            <section>
+                <h4><span>Arabica</span> Dark Roast</h4>
+            </section>
+        </section>
+
+        <section class="item">
+            <div>
+                <mat-icon>info</mat-icon>
+            </div>
+            <img src="../../../assets/img/saco-cafe-roxo.png" alt="Produto 2">
+            <section>
+                <h4><span>House Blend</span> Dark Roast</h4>
+            </section>
+        </section>
+
+        <section class="item">
+            <div>
+                <mat-icon>info</mat-icon>
+            </div>
+            <img src="../../../assets/img/saco-cafe-verde.png" alt="Produto 3">
+            <section>
+                <h4><span>Robusta</span> Dark Roast</h4>
+            </section>
+        </section>
+    </div>
+
+    <button (click)="proximo()">
+        <mat-icon>
+            arrow_forward
+        </mat-icon>
+    </button>
+
+</div>
