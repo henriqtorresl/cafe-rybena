@@ -7,25 +7,6 @@
 
 .left {
     width: 60%;
-    img {
-        margin-left: 15px;
-        width: 7%;
-        height: 8%;
-    }
-
-    @media (min-width: 769px) and (max-width: 1024px) {
-        img {
-            width: 10%;
-            height: 7%;
-        }
-    }
-
-    @media (min-width: 1025px) and (max-width: 1440px) {
-        img {
-            width: 10%;
-            height: 9%;
-        }
-    }
 }
 
 .rigth {
@@ -33,7 +14,8 @@
 }
 
 .itens {
-    padding: 15px;
+    padding: 15px 20px 20px 20px;
+    background-color: #7C573C;
 
     a {
         margin: 0 20px 0 20px;
