@@ -1,3 +1,95 @@
 <app-header [classeItens]="'itens'"></app-header>
 
-<p>servicos works!</p>
+<div class="container">
+
+    <div class="services">
+        <div class="title">
+            <h1>Serviços</h1>
+        </div>
+
+        <div class="itens">
+            <section>
+                <img src="../../../assets/img/cafeteira.png" alt="Equipamentos">
+                Equipamentos
+            </section>
+
+            <section>
+                <img src="../../../assets/img/chicara.png" alt="Tipos de café">
+                Tipos de café
+            </section>
+
+            <section>
+                <img src="../../../assets/img/copo-cafe.png" alt="Entregas">
+                Entregas
+            </section>
+
+            <section>
+                <img src="../../../assets/img/graos2.png" alt="Sementes">
+                Sementes
+            </section>
+
+            <section>
+                <img src="../../../assets/img/croissant.png" alt="Massas">
+                Massas
+            </section>
+        </div>
+    </div>
+
+    <div class="reserve">
+        <div class="title">
+            <h1>Reserve uma mesa</h1>
+        </div>
+
+        <div class="container-form">
+            <img src="../../../assets/img/reserva.png" alt="Reservas">
+
+            <div class="form">
+                <div style="display: flex; justify-content: space-between;">
+                    <mat-form-field appearance="outline" style="width: 40%;"> 
+                        <mat-label>Data</mat-label>
+                        <input matInput type="date">
+                        <mat-icon matPrefix> calendar_month </mat-icon>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" style="width: 40%;">
+                        <mat-label>Quantidade de Pessoas</mat-label>
+                        <input matInput>
+                        <mat-icon matPrefix>group</mat-icon>
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nome</mat-label>
+                        <input matInput>
+                        <mat-icon matPrefix>person</mat-icon>
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput>
+                        <mat-icon matPrefix>mail</mat-icon>
+                    </mat-form-field>
+                </div>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <mat-form-field appearance="outline" style="width: 60%;">
+                        <mat-label>Telefone</mat-label>
+                        <input matInput>
+                        <mat-icon matPrefix>phone_iphone</mat-icon>
+                    </mat-form-field>
+
+                    <section class="button">
+                        <button>
+                            Reservar
+                        </button>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
