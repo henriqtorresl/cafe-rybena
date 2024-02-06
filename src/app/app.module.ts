@@ -9,6 +9,8 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
+import { RecomendadosComponent } from './components/recomendados/recomendados.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     HeaderComponent,
     CatalogoComponent,
-    AboutComponent
+    AboutComponent,
+    RecomendadosComponent,
+    ServicosComponent
   ],
   imports: [
     BrowserModule,
