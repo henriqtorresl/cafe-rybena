@@ -16,4 +16,8 @@ export class CatalogoComponent implements OnInit {
 
   }
 
+  voltar(): void {
+    this.dialogRef.close();
+  }
+
 }

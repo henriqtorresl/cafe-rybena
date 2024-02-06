@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit {
   }
 
   abrirCatalogo() {
-    const dialogRef = this.dialog.open(CatalogoComponent, {
-      width: '70%',
-      height: '80%'
+    this.dialog.open(CatalogoComponent, {
+      width: '60%',
+      height: '70%'
     });
   }
 
