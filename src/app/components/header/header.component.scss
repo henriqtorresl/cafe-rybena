@@ -1,12 +1,35 @@
 .container-header {
     display: flex;
     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
 
+.left {
+    width: 60%;
     img {
         margin-left: 15px;
-        width: 5%;
-        height: 5%;
+        width: 7%;
+        height: 8%;
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        img {
+            width: 10%;
+            height: 7%;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        img {
+            width: 10%;
+            height: 9%;
+        }
+    }
+}
+
+.rigth {
+    width: 40%;
 }
 
 .itens {
@@ -25,12 +48,48 @@
             border-bottom-right-radius: 15px;
         }
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        padding: 5px;
+
+        a {
+            margin: 0 5px 0 5px;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+    
+            &:hover {
+                background-color: #AE8956;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        padding: 10px;
+
+        a {
+            margin: 0 10px 0 10px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+    
+            &:hover {
+                background-color: #AE8956;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
 }
 
 .itens-home {
     padding: 15px;
     background-color: #7C573C;
-    height: 900px;
+    height: 850px;
 
     a {
         margin: 0 20px 0 20px;
@@ -43,6 +102,42 @@
             background-color: #AE8956;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        padding: 5px;
+
+        a {
+            margin: 0 5px 0 5px;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+    
+            &:hover {
+                background-color: #AE8956;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        padding: 10px;
+
+        a {
+            margin: 0 10px 0 10px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+    
+            &:hover {
+                background-color: #AE8956;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
         }
     }
 }

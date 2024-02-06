@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'Leiko';
-    src: url('./leiko/Leiko-Regular.otf') format('opentype');
+    src: url('./font/leiko/Leiko-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('./font/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('opentype');
     font-weight: normal;
     font-size: normal;
 }
@@ -12,6 +19,7 @@
 }
 
 body {
+    background: url(./assets/img/grao-background.png);
     background-color: #221518;
     color: white;
     width: 100%;
