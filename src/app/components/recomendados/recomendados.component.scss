@@ -1,6 +1,23 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script';
+        font-size: 54px;
+        color: #F8E4BE;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+}
+
 .cards {
     width: 100%;
-    height: 600px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +46,7 @@
 }
 
 .item {
-    background-color: #53362A;
-    box-shadow: black 0.1em 0.1em 0.2em;
+    box-shadow: black 0.3em 0.3em 0.4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,4 +92,22 @@
             }
         }
     }
+}
+
+#item1 {
+    background: url('../../../assets/img/chicaras-background.png');
+    background-color: #53362A;
+
+}
+
+#item2 {
+    background: url('../../../assets/img/chicaras-background.png') center;
+    background-color: #53362A;
+
+}
+
+#item3 {
+    background: url('../../../assets/img/chicaras-background.png') left;
+    background-color: #53362A;
+
 }

@@ -15,11 +15,18 @@ export class RecomendadosComponent implements OnInit {
     
   }
 
-  proximo(): void {
-    const elem = this.elementRef.nativeElement.children[1].children[1];
+  anterior(): void {
+    const elem = this.elementRef.nativeElement.children[2].children[1];
     const item = elem.getElementsByClassName('item');
 
     elem.append(item[0]);
+  }
+
+  proximo(): void {
+    const elem = this.elementRef.nativeElement.children[2].children[1];
+    const item = elem.getElementsByClassName('item');
+
+    elem.prepend(item[item.length - 1]);
   }
 
 }

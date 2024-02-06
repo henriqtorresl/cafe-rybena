@@ -1,17 +1,25 @@
 <app-header [classeItens]="'itens'"></app-header>
 
+<div class="title">
+    <h1>Produtos Recomendados</h1>
+</div>
+
 <div class="cards">
 
-    <button (click)="proximo()">
+    <button (click)="anterior()">
         <mat-icon>
             arrow_back
         </mat-icon>
     </button>
 
     <div class="itens">
-        <section class="item">
+        <section class="item" id="item1">
             <div>
-                <mat-icon>info</mat-icon>
+                <mat-icon
+                    matTooltip="Desfrute de uma experiência intensa e encorpada com nosso Arabica Dark Roast, cuidadosamente preparado a partir dos mais seletos grãos de café arábica. Sua complexidade de sabores e aroma profundo proporcionam uma jornada sensorial única, elevando seu apreço pelo café de qualidade premium."
+                >
+                    info
+                </mat-icon>
             </div>
             <img src="../../../assets/img/saco-cafe-marrom.png" alt="Produto 1">
             <section>
@@ -19,9 +27,13 @@
             </section>
         </section>
 
-        <section class="item">
+        <section class="item" id="item2">
             <div>
-                <mat-icon>info</mat-icon>
+                <mat-icon
+                    matTooltip="Prepare-se para uma explosão de sabor com nosso Robusta Dark Roast. Criado com grãos robusta selecionados, este café oferece uma experiência robusta e intensa. Com sua ousada complexidade de sabores e um toque de amargor característico, cada gole é uma aventura sensorial que desperta os sentidos e revigora o paladar. Descubra a força e a profundidade deste café dark roast premium."
+                >
+                    info
+                </mat-icon>
             </div>
             <img src="../../../assets/img/saco-cafe-roxo.png" alt="Produto 2">
             <section>
@@ -29,9 +41,13 @@
             </section>
         </section>
 
-        <section class="item">
+        <section class="item" id="item3">
             <div>
-                <mat-icon>info</mat-icon>
+                <mat-icon
+                    matTooltip="Apresentamos nosso Robusta Dark Roast, uma escolha audaciosa para os amantes do café que buscam uma experiência intensa e vigorosa. Feito com os mais selecionados grãos de café robusta, este café oferece uma combinação única de sabores fortes e marcantes. Com sua profundidade e caráter distintivo, cada xícara é uma jornada de sabor que desperta os sentidos e satisfaz os paladares mais exigentes. Descubra a intensidade inigualável do nosso Robusta Dark Roast e eleve sua apreciação pelo verdadeiro café de qualidade."
+                >
+                    info
+                </mat-icon>
             </div>
             <img src="../../../assets/img/saco-cafe-verde.png" alt="Produto 3">
             <section>
