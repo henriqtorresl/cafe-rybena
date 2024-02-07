@@ -28,7 +28,7 @@ export class RecomendadosComponent implements OnInit {
     const elem = this.elementRef.nativeElement.children[2].children[1];
     const item = elem.getElementsByClassName('item');
 
-    elem.prepend(item[item.length - 1]);
+    elem.prepend(item[2]);
   }
 
   compra(): void {
