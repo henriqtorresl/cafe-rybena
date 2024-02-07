@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-recomendados',
@@ -8,7 +9,8 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 export class RecomendadosComponent implements OnInit {
 
   constructor(
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -27,6 +29,12 @@ export class RecomendadosComponent implements OnInit {
     const item = elem.getElementsByClassName('item');
 
     elem.prepend(item[item.length - 1]);
+  }
+
+  compra(): void {
+    this.snackBar.open('No momento, não é possível realizar a compra...', 'OK', {
+      duration: 4000
+    });
   }
 
 }
