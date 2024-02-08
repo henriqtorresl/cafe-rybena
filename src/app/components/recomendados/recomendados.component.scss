@@ -13,6 +13,12 @@
         color: #F8E4BE;
         text-shadow: black 0.1em 0.1em 0.2em;
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        h1 {
+            font-size: 34px;
+        }
+    }
 }
 
 .cards {
@@ -43,6 +49,10 @@
     width: 80%;
     display: flex;
     justify-content: space-around;
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 60%;
+    }
 }
 
 .item {
@@ -114,6 +124,24 @@
             }
         }
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 150px;
+        height: 250px;
+
+        h4 {
+            font-size: 12px
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        width: 250px;
+        height: 350px;
+
+        h4 {
+            font-size: 12px
+        }
+    }
 }
 
 #item1 {
@@ -141,6 +169,14 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 90%;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        width: 80%;
+    }
 }
 
 .offer {
@@ -189,5 +225,39 @@
     img {
         width: 20%;
         height: 10%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        section {
+            padding: 10px 0 10px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+    
+            button {
+                padding: 5px 15px;
+                font-size: 20px;
+            }
+        }
+    
+        img {
+            width: 30%;
+            height: 20%;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        section {    
+            button {
+                padding: 10px 20px;
+                font-size: 22px;
+            }
+        }
+
+        img {
+            width: 25%;
+            height: 10%;
+        }
     }
 }
