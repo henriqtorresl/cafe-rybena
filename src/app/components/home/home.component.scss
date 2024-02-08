@@ -3,6 +3,10 @@
     height: 100%;
     display: flex;
     margin-top: -700px;
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        margin-top: -800px;
+    }
 }
 
 .left-itens {
