@@ -12,6 +12,6 @@ O Café Rybená é um site desenvolvido para o processo seletivo da Rybená (Gru
 
 ## Para rodar o projeto
 
-Após clonar o repositório, basta rodar o compando `npm install` para instalar as dependências do node.
+Após clonar o repositório, basta rodar o comando `npm install` para instalar as dependências do node.
 
 Após intalar as dependências, utilize o comando `ng serve` ou `npm start` para rodar o projeto em: `http://localhost:4200/`.
