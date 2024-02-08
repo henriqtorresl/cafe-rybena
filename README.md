@@ -4,6 +4,12 @@ Esse projeto foi gerado com a [Angular CLI](https://github.com/angular/angular-c
 
 O Café Rybená é um site desenvolvido para o processo seletivo da Rybená (Grupo ICTS).
 
+## Dependências
+
+- **Angular CLI**: 16.0.6
+- **Node**: v18.16.0
+- **Package Manager**: npm 9.6.7
+
 ## Para rodar o projeto
 
 Basta rodar o compando `npm install` para instalar as dependências do node.
