@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { CatalogoComponent } from '../catalogo/catalogo.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -22,5 +22,6 @@ export class HomeComponent implements OnInit {
       width: '850px'
     });
   }
+
 
 }

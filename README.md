@@ -1,8 +1,8 @@
-# Café Rybená
+# Rei Do Café Frontend
 
 Esse projeto foi gerado com a [Angular CLI](https://github.com/angular/angular-cli) versão 16.0.2.
 
-O Café Rybená é um site desenvolvido para o processo seletivo da Rybená (Grupo ICTS).
+O Rei do Café é um projeto que criei com propósitos educativos, destinado a praticar conceitos de programação. Trata-se de uma aplicação simulando uma loja de café, desenvolvida por mim como parte do meu aprendizado e aperfeiçoamento em programação.
 
 ## Dependências
 

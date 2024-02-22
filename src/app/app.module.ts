@@ -17,6 +17,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     CatalogoComponent,
     AboutComponent,
     RecomendadosComponent,
-    ServicosComponent
+    ServicosComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatInputModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

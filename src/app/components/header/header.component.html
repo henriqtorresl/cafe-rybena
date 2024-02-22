@@ -1,10 +1,19 @@
+<div class="container-mobile">
+
+    <button (click)="onMenuButtonClick()">
+        <mat-icon>
+            menu
+        </mat-icon>
+    </button>
+    <img src="../../../assets/img/logo.png" alt="Logo">
+
+</div>
+
+<app-sidebar *ngIf="isSidebarOpen"></app-sidebar>
+
 <div class="container-header">
     <div class="left">
-        <img 
-            (click)="irParaHome()"
-            src="../../../assets/img/logo.png" 
-            alt="Logo"
-        >
+        <img (click)="irParaHome()" src="../../../assets/img/logo.png" alt="Logo">
     </div>
     <div class="rigth">
         <div [ngClass]="classeItens">
@@ -14,4 +23,4 @@
             <a routerLink="/about" [ngClass]="ativarBotao('about')">Sobre</a>
         </div>
     </div>
-</div>    
+</div>
