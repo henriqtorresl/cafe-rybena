@@ -33,6 +33,61 @@
                 Massas
             </section>
         </div>
+
+        <div class="itens-mobile">
+
+            <div class="botao">
+                <button (click)="anterior()">
+                    <mat-icon>
+                        arrow_back
+                    </mat-icon>
+                </button>
+            </div>
+
+            <section class="item-mobile" style="display: none;">
+                <div>
+                    <img src="../../../assets/img/cafeteira.png" alt="Equipamentos">
+                    Equipamentos
+                </div>
+            </section>
+
+            <section class="item-mobile" style="display: none;">
+                <div>
+                    <img src="../../../assets/img/chicara.png" alt="Tipos de café">
+                    Tipos de café
+                </div>
+            </section>
+
+            <section class="item-mobile" style="display: block;">
+                <div>
+                    <img src="../../../assets/img/copo-cafe.png" alt="Entregas">
+                    Entregas
+                </div>
+            </section>
+
+            <section class="item-mobile" style="display: none;">
+                <div>
+                    <img src="../../../assets/img/graos2.png" alt="Sementes">
+                    Sementes
+                </div>
+            </section>
+
+            <section class="item-mobile" style="display: none;">
+                <div>
+                    <img src="../../../assets/img/croissant.png" alt="Massas">
+                    Massas
+                </div>
+            </section>
+
+            <div class="botao">
+                <button (click)="proximo()">
+                    <mat-icon>
+                        arrow_forward
+                    </mat-icon>
+                </button>
+            </div>
+        </div>
+
     </div>
 
     <div class="reserve">
@@ -44,14 +99,14 @@
             <img src="../../../assets/img/reserva.png" alt="Reservas">
 
             <form class="form" [formGroup]="formulario">
-                <div style="display: flex; justify-content: space-between;">
-                    <mat-form-field appearance="outline" style="width: 40%;"> 
+                <div id="linha1">
+                    <mat-form-field appearance="outline"> 
                         <mat-label>Data</mat-label>
                         <input matInput type="date" formControlName="data">
                         <mat-icon matPrefix> calendar_month </mat-icon>
                     </mat-form-field>
 
-                    <mat-form-field appearance="outline" style="width: 40%;">
+                    <mat-form-field appearance="outline">
                         <mat-label>Qntd de Pessoas</mat-label>
                         <input matInput formControlName="qntPessoas">
                         <mat-icon matPrefix>group</mat-icon>
@@ -74,8 +129,8 @@
                     </mat-form-field>
                 </div>
 
-                <div style="display: flex; justify-content: space-between;">
-                    <mat-form-field appearance="outline" style="width: 60%;">
+                <div id="linha4">
+                    <mat-form-field appearance="outline">
                         <mat-label>Telefone</mat-label>
                         <input matInput formControlName="telefone">
                         <mat-icon matPrefix>phone_iphone</mat-icon>
