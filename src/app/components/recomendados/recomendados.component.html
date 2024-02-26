@@ -62,6 +62,27 @@
         </mat-icon>
     </button>
 
+    <div class="itens-mobile">
+
+        <div class="button-mobile">
+            <button (click)="anterior()">
+                <mat-icon>
+                    arrow_back
+                </mat-icon>
+            </button>
+        </div>
+
+
+
+        <div class="button-mobile">
+            <button (click)="proximo()">
+                <mat-icon>
+                    arrow_forward
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+
 </div>
 
 <div class="offer-container">
@@ -74,7 +95,10 @@
             <h1>Até 50% de desconto</h1>
 
             <p>
-                No nosso café, nos orgulhamos de proporcionar aos nossos clientes o melhor café ao redor. Nossos cafés cuidadosamente selecionados vêm de algumas das regiões de cultivo de café mais renomadas do mundo, garantindo que cada xícara seja insuperável em sabor e frescor.            </p>
+                No nosso café, nos orgulhamos de proporcionar aos nossos clientes o melhor café ao redor. Nossos cafés cuidadosamente selecionados vêm de algumas das regiões de cultivo de café mais renomadas do mundo, garantindo que cada xícara seja insuperável em sabor e frescor.            
+            </p>
+
+            <img id="image-mobile" src="../../../assets/img/oferta.png" alt="Desconto">
 
             <button (click)="compra()">
                 Compre Agora
