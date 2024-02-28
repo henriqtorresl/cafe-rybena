@@ -37,4 +37,54 @@ export class RecomendadosComponent implements OnInit {
     });
   }
 
+  anteriorMobile(): void {
+    const elements: HTMLCollectionOf<Element> = document.getElementsByClassName('item-mobile');
+
+    for (let i = 0; i < elements.length; i++) {      
+      var display = elements[i].getAttribute('style');
+  
+      if (display === 'display: block;') {
+        // Esconde o elemento atual
+        elements[i].setAttribute('style', 'display: none;');
+  
+        // Verifica se há um elemento anterior
+        if (i > 0) {
+          // Mostra o elemento anterior
+          elements[i - 1].setAttribute('style', 'display: block;');
+        } else {
+          // Se não houver elemento anterior, mostra o último elemento
+          elements[elements.length - 1].setAttribute('style', 'display: block;');
+        }
+        
+        // Sai do loop após encontrar o primeiro elemento visível
+        break;
+      }
+    }
+  }
+
+  proximoMobile(): void {
+    const elements: HTMLCollectionOf<Element> = document.getElementsByClassName('item-mobile');
+
+    for (let i = 0; i < elements.length; i++) {      
+      var display = elements[i].getAttribute('style');
+  
+      if (display === 'display: block;') {
+        // Esconde o elemento atual
+        elements[i].setAttribute('style', 'display: none;');
+        
+        // Se eu estiver na última posição
+        if (i == elements.length - 1) {
+          // Mostra o primeiro elemento
+          elements[0].setAttribute('style', 'display: block;');
+        } else {
+          // Senão, eu mostro o próximo
+          elements[i + 1].setAttribute('style', 'display: block;');
+        }
+        
+        // Sai do loop após encontrar o primeiro elemento visível
+        break;
+      }
+    }
+  }
+
 }
