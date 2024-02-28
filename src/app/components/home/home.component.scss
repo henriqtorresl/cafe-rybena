@@ -4,6 +4,10 @@
     display: flex;
     margin-top: -750px;
 
+    @media (max-width: 720px) {
+        display: none;
+    }
+
     @media (min-width: 1025px) and (max-width: 1440px) {
         margin-top: -600px;
     }
@@ -96,5 +100,13 @@
         img {
             height: 550px;
         }
+    }
+}
+
+.container-mobile {
+    display: none;
+
+    @media (max-width: 720px) {
+        display: block;
     }
 }
