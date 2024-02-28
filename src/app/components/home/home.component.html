@@ -1,7 +1,37 @@
 <app-header [classeItens]="'itens-home'"></app-header>
 
 <div class="container-mobile">
-    <h1>Bem vindo</h1>
+    <img src="../../../assets/img/rei-do-cafe.png" alt="Rei Do Café">
+
+    <div class="info-mobile">
+        <div class="icon-container" style="margin-bottom: 25px;">
+            <mat-icon class="icon">coffee</mat-icon>
+        </div>
+
+        <p>
+            Deixe que o café patrocine o bom humor de hoje! Encontre o seu agora mesmo.
+        </p>
+
+        <div class="icon-container">
+            <mat-icon class="icon">coffee_maker</mat-icon>
+        </div>
+    </div>
+
+    <div class="hurry-up">
+        
+        <h4>
+            Compre seu primeiro café
+        </h4>
+    
+        <div class="button-mobile">
+            <button (click)="buy()">
+                Adquira já
+                <mat-icon>two_wheeler</mat-icon>
+            </button>
+        </div>
+        
+    </div>
+
 </div>
 
 <div class="container">
