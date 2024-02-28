@@ -8,6 +8,10 @@
         height: 110%;
         background: url('../../../assets/img/graos.png');
     }
+
+    @media (max-width: 768px) and (max-height: 667px) {
+        height: 120%;
+    }
 }
 
 .left {
