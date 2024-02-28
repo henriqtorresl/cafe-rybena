@@ -178,10 +178,13 @@
             color: white;
             padding: 20px;
 
-
             &:hover {
                 color: #AE8956;
                 cursor: pointer;
+            }
+
+            mat-icon:hover {
+                color: #AE8956;
             }
         }
         
