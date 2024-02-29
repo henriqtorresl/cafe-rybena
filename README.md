@@ -15,3 +15,7 @@ O Rei do Café é um projeto que criei com propósitos educativos, destinado a p
 Após clonar o repositório, basta rodar o comando `npm install` para instalar as dependências do node.
 
 Após intalar as dependências, utilize o comando `ng serve` ou `npm start` para rodar o projeto em: `http://localhost:4200/`.
+
+## Sobre o site
+
+Para acessar o site basta clicar no link: `https://rei-do-cafe.vercel.app/home`
